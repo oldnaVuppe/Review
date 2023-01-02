@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      /* 垂直水平居中的多种方式 */
+      /* 1、flex */
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+
+      /* 2、利用定位 子绝父相 在父级上添加相对定位 子级盒子就会在父盒子上垂直水平居中  */
+      /* position: relative; */
+
+      /* 3、也是flex 给父级设置一个display: flex; 然后子元素设置margin:auto */
+
+      /* 4、父级绝对定位，子绝父相 子元素 top: 50%; left: 50%; 再利用位移transform: translate(-50%,-50%); */
+
+      /* 5、定位 子绝父相 margin-left -50px margin-top -50px  margin-left为子容器宽度的一半，margin-top为子容器高度的一半 */
+      /* display: flex; */
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      margin: 100px auto;
+    }
+    .son {
+      /* position: absolute; */
+      /* top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; */
+      margin: auto;
+      /* top: 50%;
+      left: 50%; */
+      /* margin-left: -50px;
+      margin-top: -50px; */
+      /* transform: translate(-50%, -50%); */
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="son"></div>
+  </div>
+
+</body>
+
+</html>
