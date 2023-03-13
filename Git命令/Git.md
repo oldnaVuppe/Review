@@ -2,6 +2,10 @@
 
 #### 1. 配置用户信息
 
+##### git 配置修改
+
+修改默认分支为 `main` 分支 `git config --global init.defaultBranch main`
+
 ```js
 ⭐ git config --global user.name "your name"   # user.name后面是空格!
 ⭐ git config --global user.email "your email"
